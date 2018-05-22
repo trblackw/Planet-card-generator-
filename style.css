@@ -4,9 +4,8 @@ body {
   padding: 20px 30px;
   margin: 0;
   font-family: 'Roboto Condensed', sans-serif;
-  /* display: flex; */
 }
-
+@media screen and (min-width: 720px) {
 .icon-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -15,11 +14,6 @@ body {
   'neptune saturn mercury venus';
   grid-row-gap: 7em;
 }
-
-.planet {
-  margin: 0 auto;
-}
-
 #earth {
   grid-area: earth;
 }
@@ -44,7 +38,11 @@ body {
 #venus { 
   grid-area: venus;
 }
+}
 
+.icon-container p {
+  color: #eee;
+}
 
 h2 {
   font-size: 2em;
@@ -83,6 +81,19 @@ img {
   width: 150px;
 }
 
+.icon-container > div:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition-duration: 0.8s;
+}
+
+.icon-container > div:hover p {
+  transform: rotate(360deg);
+  transition-duration: 0.8s;
+  text-transform: uppercase;
+  font-size: 1.3em;
+}
+
 .card {
   box-sizing: border-box;
   background: white;
@@ -99,14 +110,5 @@ img {
   margin-bottom: 1.5em;
 }
 
-.container {
-  background-color: rgb(141, 182, 148);
-  border-radius: 25px;
-}
-  
-  /* @media screen and (min-width: 720px) {
 
 
-
-
-  } */

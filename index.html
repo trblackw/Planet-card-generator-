@@ -10,48 +10,68 @@
     <title>Planet Card Generator</title>
 </head>
 <body>
+    <div class="container container-fluid">
     <div class="jumbotron mb-5 p-4">
         <h4 class="display-3 text-center">Planet card generator</h4>
         <p class="text-center font-italic">Pick a planet, any planet...</p>
         <p class="lead text-center">Click on any of the planets below to generate a card with more details & information for that planet.</p>
         
+        <div class="container text-center">
+        <label for="custom-select" aria-placeholder="Planet">Jump to:</label>
+        <select class="custom-select w-25" id="selectPlanet">
+            <option value="" selected disabled>Planet...</option>
+            <option value="earth">Earth</option>
+            <option value="mars">Mars</option>
+            <option value="mercury">Mercury</option>
+            <option value="jupiter">Jupiter</option>
+            <option value="saturn">Saturn</option>
+            <option value="venus">Venus</option>
+            <option value="neptune">Neptune</option>
+            <option value="uranus">Uranus</option>
+          </select>  
+            <button>click me</button>
+          </div>      
         <p class='small text-center mt-5 mb-0 p-0'>Note - planets not to scale</p>
     </div>
 
     <div class="icon-container">
-        <div id="earth" class="planet">
+        <div id="earth" class="m-auto">
             <img src="http://www.myiconfinder.com/uploads/iconsets/256-256-6fd4a39ab22af50c617aad5b3e55e6ed-globe.png" alt="earth">
-            <p class="text-light text-center">Earth</p>
+            <div>
+            <p class="text-center planet">Earth</p>
+            </div>
         </div>
-        <div id="jupiter" class="planet">
+        <div id="jupiter" class="m-auto">
             <img src="https://www.shareicon.net/data/256x256/2016/04/13/749193_planet_512x512.png" alt="jupiter">
-            <p class="text-light text-center">Jupiter</p>
+            <p class="text-center planet">Jupiter</p>
         </div>
-        <div id="mars" class="planet">
+        <div id="mars" class="m-auto">
             <img src="https://icon-icons.com/icons2/665/PNG/256/mars_icon-icons.com_60276.png" alt="mars">
-            <p class="text-light text-center">Mars</p>
+            <p class="text-center planet">Mars</p>
         </div>
-        <div id="mercury" class="planet">
+        <div id="mercury" class="m-auto">
             <img src="https://cdn3.iconfinder.com/data/icons/solar-system-3/100/Mercury-256.png" alt="mercury">
-            <p class="text-light text-center">Mercury</p>
+            <p class="text-center planet">Mercury</p>
         </div>
-        <div id="neptune" class="planet">
+        <div id="neptune" class="m-auto">
             <img src="http://icons.iconarchive.com/icons/zairaam/bumpy-planets/256/10-neptune-icon.png" alt="neptune">
-            <p class="text-light text-center">Neptune</p>
+            <p class="text-center planet">Neptune</p>
         </div>
-        <div id="saturn" class="planet">
+        <div id="saturn" class="m-auto">
             <img src="http://icons.iconarchive.com/icons/aha-soft/space/256/Saturn-icon.png" alt="saturn">
-            <p class="text-light text-center">Saturn</p>
+            <p class="text-center planet">Saturn</p>
         </div>
-        <div id="uranus" class="planet">
+        <div id="uranus" class="m-auto">
             <img src="http://icons.iconarchive.com/icons/zairaam/bumpy-planets/256/09-uranus-icon.png" alt="uranus">
-            <p class="text-light text-center">Uranus</p>
+            <p class="text-center planet">Uranus</p>
         </div>
-        <div id="venus" class="planet">
+        <div id="venus" class="m-auto">
             <img src="https://cdn3.iconfinder.com/data/icons/solar-system-3/100/Venus-256.png" alt="venus">
-            <p class="text-light text-center">Venus</p>
+            <p class="text-center planet">Venus</p>
         </div>
     </div>
+</div>
+    
    
     
 
