@@ -80,7 +80,9 @@ p {
 img {
   width: 150px;
 }
-
+.icon-container {
+  margin-bottom: 30px;
+}
 .icon-container > div:hover {
   cursor: pointer;
   transform: scale(1.2);
@@ -110,6 +112,12 @@ img {
   margin-bottom: 1.5em;
 }
 
+footer {
+  background-color: #dddddd;
+  width: 100%;
+  height: 100px;
+}
 
-
-
+i {
+  font-size: 19px;
+}

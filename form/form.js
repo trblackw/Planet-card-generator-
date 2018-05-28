@@ -1,3 +1,29 @@
+const body = document.querySelector('body');
+const signUpButton = document.querySelector('button');
+
+signUpButton.addEventListener('click', () => {
+  body.innerHTML = `<form action="#" method="post">
+  <p>
+      <label for="username">Username</label>
+      <input id="username" name="username" type="text" class="form-control">
+      <span>Can only contain letters a-z in lowercase</span>
+  </p>
+  <p>
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password">
+      <span>Must contain a lowercase, uppercase letter and a number</span>
+  </p>
+  <p>
+      <label for="email">Email</label>
+      <input id="email" name="email" type="text">
+      <span>Must be a valid email address</span>
+  </p>
+  <button class='btn btn-primary'>Submit</button>
+</form>`
+});
+
+
+//Form HTML elements
 const usernameInput = document.querySelector('#username');
 const passwordInput = document.querySelector('#password');
 const telephoneInput = document.querySelector('#telephone');
@@ -57,3 +83,5 @@ telephoneInput.addEventListener('blur', e => {
 });
 
 emailInput.addEventListener("input", createListener(isValidEmail));
+
+

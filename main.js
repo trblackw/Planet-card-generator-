@@ -19,7 +19,7 @@ const Mars = new Planet('Mars', '4,195.5 mi', '6.42 x 10^23 kg (10.7% of Earth)'
     
 const Venus = new Planet('Venus', '7,520.8 mi', '4.87 x 10^24 kg (81.5% of Earth)', 0,'462 °C', 225, 0.62, 'Venus has a hellish atmosphere as well, consisting mainly of carbon dioxide with clouds of sulfuric acid, and scientists have only detected trace amounts of water in the atmosphere. The atmosphere is heavier than that of any other planet, leading to a surface pressure 90 times that of Earth.', 'Although it is the second planet from the sun, Venus is the hottest planet in the solar system. The reason Venus is hotter than even Mercury is not because of its position in the solar system but because of its thick, dense cloud layer.');
 
-const Neptune = new Planet('Neptune', '30,599 mi', '4,212 mi', '1.02 × 10^26 kg (17 Earths)', 14, '-214 °C', '60,225', 165, 'Neptune is very similar to Uranus. It\'s made of a thick soup of water, ammonia, and methane over an Earth-sized solid center. Its atmosphere is made of hydrogen, helium, and methane. The methane gives Neptune the same blue color as Uranus.', 'Neptune was not known to the ancients. It is not visible to the naked eye and was first observed in 1846. Its position was determined using mathematical predictions. It was named after the Roman god of the sea.');
+const Neptune = new Planet('Neptune', '30,599 mi', '1.02 × 10^26 kg (17 Earths)', 14, '-214 °C', '60,225', 165, 'Neptune is very similar to Uranus. It\'s made of a thick soup of water, ammonia, and methane over an Earth-sized solid center. Its atmosphere is made of hydrogen, helium, and methane. The methane gives Neptune the same blue color as Uranus.', 'Neptune was not known to the ancients. It is not visible to the naked eye and was first observed in 1846. Its position was determined using mathematical predictions. It was named after the Roman god of the sea.');
 
 const Uranus = new Planet('Uranus', '31,763.25 mi', '8.68 × 10^25 kg (15 Earths)', 27,'-216 °C', '30,687', 84, 'The seventh planet from the sun with the third largest diameter in our solar system, Uranus is very cold and windy. The ice giant is surrounded by 13 faint rings and 27 small moons as it rotates at a nearly 90-degree angle from the plane of its orbit. This unique tilt makes Uranus appear to spin on its side, orbiting the sun like a rolling ball.', 'Uranus is often referred to as an “ice giant” planet. Like the other gas giants, it has a hydrogen upper layer, which has helium mixed in. Below that is an icy “mantle, which surrounds a rock and ice core. The upper atmosphere is made of water, ammonia and the methane ice crystals that give the planet its pale blue colour.');
 
@@ -62,17 +62,6 @@ const select = document.querySelector('#selectPlanet');
 const button = document.querySelector('button');
 
 
-//drop down select items
-// const earthDropdown = document.querySelector('[value=earth]');
-// const marsDropdown = document.querySelector('[value=mars');
-// const mercuryDropdown = document.querySelector('[value=mercury]');
-// const jupiterDropdown = document.querySelector('[value=jupiter]');
-// const saturnDropdown = document.querySelector('[value=saturn]');
-// const venusDropdown = document.querySelector('[value=venus]');
-// const neptuneDropdown = document.querySelector('[value=neptune]');
-// const uranusDropdown = document.querySelector('[value=uranus]');
-
-
 //planet paragraphs to be clicked for cards
 const earth = document.querySelector('#earth');
 const mars = document.querySelector('#mars');
@@ -92,23 +81,4 @@ neptune.addEventListener('click', () => body.innerHTML = createPlanetHTML(Neptun
 saturn.addEventListener('click', () => body.innerHTML = createPlanetHTML(Saturn));
 mercury.addEventListener('click', () => body.innerHTML = createPlanetHTML(Mercury));
 venus.addEventListener('click', () => body.innerHTML = createPlanetHTML(Venus));
-
-//functionality for dropdown item selections
-// const insertPlanetHTML = event => {
-//   if (!event.target.value) {
-//     alert('Please select a planet from the list')
-//   } else {
-//     body.innerHTML = createPlanetHTML(event.target.value);
-//   }
-// }
-
-// document.addEventListener('DOMContentLoaded', function() {
-//   select.onchange = insertPlanetHTML;
-// }, false);
-  
-
-// button.addEventListener('click', () => {
-//   body.innerHTML = createPlanetHTML(select.value);
-//   console.log(typeof select.value)
-// });
 
